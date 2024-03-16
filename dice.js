@@ -19,3 +19,9 @@ else if(randnumber<rndnum2){
 else{
     document.querySelector("h1").innerHTML="Match Draw !";
 }
+
+document.getElementById('refreshForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevents the default form submission behavior
+    location.reload(); // Reload the page
+  });
+  
